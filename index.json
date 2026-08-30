@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-08-30T03:40:21.403225+00:00",
+  "updated_at": "2026-08-30T03:40:30.487397+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -30,7 +30,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.acoustid.zip",
-          "sha256": "f2f8107a6e9c6ff9f7bf1226acfacf252de6130974324d27d8c93805b61a5ee6",
+          "sha256": "f0a1f5fea20e931db4ad07ac248704b31202dc151d204e3bddc00fccef971daf",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -57,7 +57,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.clean-navidrome-artists.zip",
-          "sha256": "7776701d814c170514f3c0a97178d5d28377fb522f6d47fc686284106bbc81c5",
+          "sha256": "b864a8eb2d2e63d667830aacf136eb5b8de25b61155f9da406b22a9279f0712a",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -84,7 +84,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.deezer-batch.zip",
-          "sha256": "1c53019f36ffd10e1005be05d4ae8145c0e8604905a6bccc6b6acfcf9ba29a93",
+          "sha256": "7b50a4c0b60c2df951c58af424e888d54122f30b7879b29c6cd8c4ac51c0f340",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -138,7 +138,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.discord-webhook.zip",
-          "sha256": "6c635ca6a2bbd5bdda57d4f4b614ab291a66dfdc21d5d0c97c7a9034faa08022",
+          "sha256": "0db34ef3ec0d390f24a221c862d71915372959a077c78009ba7e1c043c08aaa8",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -165,7 +165,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.fix-navidrome-splits.zip",
-          "sha256": "49b9ea9efea2386fa48f21463ee5d4c79e2baed3be48eec0e86a30dc93837557",
+          "sha256": "1b401eef1b0c86b5f72e20bb8ed925e780e6ab4a6be8715ca73ecf949aea18a2",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -192,7 +192,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.itunes.zip",
-          "sha256": "32a69cc53e6170fdc7ec97c180246c204817de7cfb5aed80ab7c2ba6be676540",
+          "sha256": "68dbce27272b8488f1d614dc2082c32e04f56ae9dc83067e68d37cab8c145cb9",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -219,7 +219,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.musicbrainz.zip",
-          "sha256": "e722690b5acd64313a8cd0abc67fe93209d071d3045eaff5cef377bd24550436",
+          "sha256": "e4fa5a303c76ea2b1b452f71509faae298e68891b8363158263b50be4d758b51",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -276,7 +276,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.navidrome.zip",
-          "sha256": "61e18d8ca55fb0497847dd862112472578fbcd77a28fb41406401c8b293cf61f",
+          "sha256": "87aa74d0202b08278186a152438ec3f2ef97a49b6f43c6e2723464e6b4c14d63",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -303,7 +303,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.normalize-album-tags.zip",
-          "sha256": "850f7201a618857c2dc958adf718a08b2f87a96d551a6ff17166ae974da85233",
+          "sha256": "78a28f08a36565d6a9a06c1b59089b01bd8f55d0066b34f2b6cae6496aa2997b",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -357,7 +357,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.ntfy-webhook.zip",
-          "sha256": "d789542824167ad7352c57e6ff4d74bc7010a9ab32325d2f2dccc3f4052a4e52",
+          "sha256": "c464b9b9c9ce7caaed95a3d751fb20cd34e1e853727d916f2734e61c5822f940",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -384,7 +384,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.reverify-library.zip",
-          "sha256": "8dfd8e60a2407903dd46517d103a54b87c8316403e58b4d53ed2208b5215152a",
+          "sha256": "a524c0f32bb39d51e3ba323092d56b38080f40a461a031774cc98e295346d499",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -422,7 +422,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.reverse-proxy-auth.zip",
-          "sha256": "b9f6600fb6903ebc5ef024c79dd4de0dea768a1155746e9c8d7ab06a5515a67f",
+          "sha256": "bc0bf5f685f89905e61eae715e8153790814eb203eec399504cdc634eca4e824",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -465,7 +465,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.spotiflac.zip",
-          "sha256": "c19ce94577ceb18fa81fce2b41cb39253502a4377feca0b4a0b22920dd53b9ae",
+          "sha256": "e1a2c17889986c8abdc39d6407868d7ac00580ab4884c1a658d5e97763db2fce",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -505,7 +505,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.spotify.zip",
-          "sha256": "43aa9f4ed1347fe8241644af6f06dc26b53990c9eaac879d0d27c9e7475b29e6",
+          "sha256": "32f7e2fc74f5d303045cd440dc052fbfa22302a7e6d34c5126cc90395d2aebb1",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -538,7 +538,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.subsonic.zip",
-          "sha256": "537a42aac62362a98a0636b84a9e97944f30d8714471f9603a3fa06f6072217b",
+          "sha256": "c6cd97bafe134e760da8a309771fcda8ecd2a78bb86aa6eb85fbb178da1bec48",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -566,7 +566,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.vpn.zip",
-          "sha256": "f43a7d838eb9c49d802e9330392d3f0e92c8594db49b652d77ec662980977ee4",
+          "sha256": "4fbdf2e62fc234ef395cda0c68e784036b389003989625fe38138b393cb8095f",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -619,7 +619,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.ytdlp.zip",
-          "sha256": "03b88c67becf41c5d95f863487081fa31feff5956eb4ba8fdf2b9f7bcec56956",
+          "sha256": "a6d100bfeab03da8321dd042c8ae67de7516a08dfc2902770f9f3c161f45d0dc",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
