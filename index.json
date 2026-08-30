@@ -1,0 +1,629 @@
+{
+  "name": "Official fnack Plugins",
+  "updated_at": "2026-08-30T03:39:39.171395+00:00",
+  "plugins": [
+    {
+      "id": "fnack.acoustid",
+      "name": "AcoustID Fingerprinting",
+      "latest_version": "1.0.0",
+      "type": [
+        "fingerprint"
+      ],
+      "description": "Optional acoustic verification: confirms a download is the right song, identifies unknown/regional tracks, flags mismatches. Keyless = disabled (silent no-op).",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network",
+        "filesystem:music"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "api_key",
+          "type": "secret",
+          "required": false
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.acoustid.zip",
+          "sha256": "12b97eb283c1b98142f81c0a266ab41a1cf245c9ee2da5fada12faa93ed770a0",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.clean-navidrome-artists",
+      "name": "Clean Navidrome Artists",
+      "latest_version": "1.0.0",
+      "type": [
+        "library_task"
+      ],
+      "description": "Deletes Navidrome media_file_artists rows for non-artist roles (songwriter/featured credits) and empty artist rows.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.clean-navidrome-artists.zip",
+          "sha256": "64f3373c98f14b93ac8991714590e62a231a7bfdb3b6d337aba2194cd17fd54b",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.deezer-batch",
+      "name": "Deezer (batch enrichment)",
+      "latest_version": "1.0.0",
+      "type": [
+        "metadata_provider"
+      ],
+      "description": "Deezer discography/metadata enrichment for sync & import. Authoritative, tried first. The interactive /api/search-artist route stays core.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.deezer-batch.zip",
+          "sha256": "a1fddf65889f6578d957d3538c58cb6140f5edb60bd881f36fb9a725027e8fd4",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.discord-webhook",
+      "name": "Discord Webhook",
+      "latest_version": "1.0.0",
+      "type": [
+        "event_hook"
+      ],
+      "description": "Sends Discord notifications when downloads complete, fail, or AcoustID flags a track.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network",
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "webhook_url",
+          "type": "secret",
+          "required": true
+        },
+        {
+          "key": "on_job_completed",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "key": "on_job_failed",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "key": "on_caution_flagged",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "key": "username",
+          "type": "string",
+          "default": "fnack"
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.discord-webhook.zip",
+          "sha256": "c4ab51bfa611dca3f3cadccf76801b2b8a83e5cb1563de519f50a1755e8f2409",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.fix-navidrome-splits",
+      "name": "Fix Navidrome Splits",
+      "latest_version": "1.0.0",
+      "type": [
+        "library_task"
+      ],
+      "description": "Consolidates split/duplicate album rows in the Navidrome database.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.fix-navidrome-splits.zip",
+          "sha256": "bb025ce5f789de956d439b7c530c447156371bc0b3fb4676867cb39c340aef85",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.itunes",
+      "name": "iTunes Search API",
+      "latest_version": "1.0.0",
+      "type": [
+        "metadata_provider"
+      ],
+      "description": "iTunes Search API fallback for album-track metadata.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.itunes.zip",
+          "sha256": "2f11813f08d07fd85f41081dbc8ff45395fcae319eca1e117075e1abb0b8a35e",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.musicbrainz",
+      "name": "MusicBrainz",
+      "latest_version": "1.0.0",
+      "type": [
+        "metadata_provider"
+      ],
+      "description": "Enrichment-only MusicBrainz lookup (adds mb_* facts; never removes/renames). 1 req/s + Retry-After + negative cache preserved.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.musicbrainz.zip",
+          "sha256": "014bbf9ba5252fdd4e50eb4c2d4df0fe03ef511294a825138bfd17962b685694",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.navidrome",
+      "name": "Navidrome",
+      "latest_version": "1.0.0",
+      "type": [
+        "scan_trigger",
+        "ui_extension"
+      ],
+      "description": "Triggers Navidrome rescans and contributes the Navidrome settings panel.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network",
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "url",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "key": "user",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "key": "token",
+          "type": "secret",
+          "default": ""
+        },
+        {
+          "key": "auto_scan",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "key": "db_path",
+          "type": "string",
+          "default": ""
+        }
+      ],
+      "ui": {
+        "slots": [
+          "settings_tab"
+        ]
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.navidrome.zip",
+          "sha256": "1c9da206a037ab952f42cb119b26aa791a430aab29c31f70e5cc9ba595e63be0",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.normalize-album-tags",
+      "name": "Normalize Album Tags",
+      "latest_version": "1.0.0",
+      "type": [
+        "library_task"
+      ],
+      "description": "Aligns library tags with the fnack database (album merges, tag normalization, artwork backfill).",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.normalize-album-tags.zip",
+          "sha256": "96115a9f2e48d91ac39ec7c4a08f27be194486aa88c7e134467ab6be0efcd9c1",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.ntfy-webhook",
+      "name": "ntfy Webhook",
+      "latest_version": "1.0.0",
+      "type": [
+        "event_hook"
+      ],
+      "description": "Sends ntfy.sh (or self-hosted ntfy) push notifications when downloads complete, fail, or AcoustID flags a track.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network",
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "server_url",
+          "type": "string",
+          "default": "https://ntfy.sh"
+        },
+        {
+          "key": "topic",
+          "type": "string",
+          "required": true
+        },
+        {
+          "key": "on_job_completed",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "key": "on_job_failed",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "key": "on_caution_flagged",
+          "type": "boolean",
+          "default": "true"
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.ntfy-webhook.zip",
+          "sha256": "2927ca3f92596ec12d68f66885f92c99a0cdf80067307c99f7131d0270fbe89c",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.reverify-library",
+      "name": "Reverify Library",
+      "latest_version": "1.0.0",
+      "type": [
+        "library_task"
+      ],
+      "description": "Re-verifies downloaded files against their expected track metadata (duration + tags) and flags mismatches.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.reverify-library.zip",
+          "sha256": "22d18dc433496d878694499629e208a94c8d9b6ea8bcebb20aa127fc7eb2d9fa",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.reverse-proxy-auth",
+      "name": "Reverse-Proxy Auth",
+      "latest_version": "1.0.0",
+      "type": [
+        "auth_provider"
+      ],
+      "description": "Optional: authenticate users via a trusted reverse-proxy header (Authelia/Authentik). fnack stays fully open until this plugin is ENABLED.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "header_name",
+          "type": "string",
+          "default": "X-Forwarded-User"
+        },
+        {
+          "key": "trusted_proxy",
+          "type": "string",
+          "default": ""
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.reverse-proxy-auth.zip",
+          "sha256": "dd14e8b96991782bcbd13404637f919e7211206b6657446b7d05d3881a9d7baa",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.spotiflac",
+      "name": "SpotiFLAC",
+      "latest_version": "1.0.0",
+      "type": [
+        "downloader"
+      ],
+      "description": "Lossless audio via SpotiFLAC (Tidal/Qobuz/Deezer/SoundCloud, zero-auth). Tried first.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network",
+        "filesystem:downloads"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "quality",
+          "type": "select",
+          "options": [
+            "LOSSLESS",
+            "HIGH"
+          ],
+          "default": "LOSSLESS"
+        },
+        {
+          "key": "delay",
+          "type": "number",
+          "default": "3.0"
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.spotiflac.zip",
+          "sha256": "d66bd30aec2ac619b73ce629e9fd7fb2bfd57fec2d7844c1a87caae144ef38a1",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.spotify",
+      "name": "Spotify (URL resolution)",
+      "latest_version": "1.0.0",
+      "type": [
+        "metadata_provider"
+      ],
+      "description": "Zero-auth Spotify track URL resolution (ISRC-first) for the download pipeline. Not a user-facing search box.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "client_id",
+          "type": "string",
+          "default": "",
+          "required": false
+        },
+        {
+          "key": "client_secret",
+          "type": "secret",
+          "default": "",
+          "required": false
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.spotify.zip",
+          "sha256": "20e0081735e9774b264f0fab07f9b92b03352750e9ee52de43dcc1dc41403c1a",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.subsonic",
+      "name": "Subsonic API",
+      "latest_version": "1.0.0",
+      "type": [
+        "server_extension"
+      ],
+      "description": "Exposes fnack's library as a Subsonic server (Symfonium/DSub/Sublime Music). Auth via the fnack API key; open if no key set.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "enabled",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.subsonic.zip",
+          "sha256": "c4f216a2938f762342c8a52fb33e83524258003120420b9e4d8964c3a31b5ed6",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.vpn",
+      "name": "VPN (WireGuard/OpenVPN)",
+      "latest_version": "1.0.0",
+      "type": [
+        "vpn"
+      ],
+      "description": "Split-mode WireGuard/OpenVPN tunnel for download/metadata traffic. Includes the local HTTP CONNECT proxy (scripts/http_proxy.py).",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings",
+        "filesystem:downloads"
+      ],
+      "trust_level": "official",
+      "settings_schema": [],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.vpn.zip",
+          "sha256": "9af08a21d44b327705b434f8b4da7f2f94c7b9b2edef835678b602f079a79ca0",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.ytdlp",
+      "name": "yt-dlp",
+      "latest_version": "1.0.0",
+      "type": [
+        "downloader"
+      ],
+      "description": "YouTube/YouTube Music fallback downloader. Also serves the legacy spotdl entry point (alias).",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "network",
+        "filesystem:downloads"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "format",
+          "type": "select",
+          "options": [
+            "opus",
+            "flac",
+            "mp3"
+          ],
+          "default": "opus"
+        },
+        {
+          "key": "audio_source",
+          "type": "select",
+          "options": [
+            "youtube",
+            "youtube_music"
+          ],
+          "default": "youtube_music"
+        },
+        {
+          "key": "cookies_path",
+          "type": "string",
+          "default": "/config/cookies.txt"
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.ytdlp.zip",
+          "sha256": "36c76e6e20d9fe24ab06ba10bc8037d9ea2b2400243232e77e419374d4f26692",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    }
+  ]
+}
