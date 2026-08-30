@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-08-30T03:40:30.487397+00:00",
+  "updated_at": "2026-08-30T15:52:08.575501+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -114,17 +114,17 @@
         {
           "key": "on_job_completed",
           "type": "boolean",
-          "default": "true"
+          "default": true
         },
         {
           "key": "on_job_failed",
           "type": "boolean",
-          "default": "true"
+          "default": true
         },
         {
           "key": "on_caution_flagged",
           "type": "boolean",
-          "default": "true"
+          "default": true
         },
         {
           "key": "username",
@@ -260,7 +260,7 @@
         {
           "key": "auto_scan",
           "type": "boolean",
-          "default": "true"
+          "default": true
         },
         {
           "key": "db_path",
@@ -338,17 +338,17 @@
         {
           "key": "on_job_completed",
           "type": "boolean",
-          "default": "true"
+          "default": true
         },
         {
           "key": "on_job_failed",
           "type": "boolean",
-          "default": "true"
+          "default": true
         },
         {
           "key": "on_caution_flagged",
           "type": "boolean",
-          "default": "true"
+          "default": true
         }
       ],
       "ui": {
@@ -456,7 +456,7 @@
         {
           "key": "delay",
           "type": "number",
-          "default": "3.0"
+          "default": 3.0
         }
       ],
       "ui": {
@@ -529,7 +529,7 @@
         {
           "key": "enabled",
           "type": "boolean",
-          "default": "false"
+          "default": false
         }
       ],
       "ui": {
@@ -549,7 +549,8 @@
       "name": "VPN (WireGuard/OpenVPN)",
       "latest_version": "1.0.0",
       "type": [
-        "vpn"
+        "vpn",
+        "ui_extension"
       ],
       "description": "Split-mode WireGuard/OpenVPN tunnel for download/metadata traffic. Includes the local HTTP CONNECT proxy (scripts/http_proxy.py).",
       "author": "fnack",
@@ -561,12 +562,14 @@
       "trust_level": "official",
       "settings_schema": [],
       "ui": {
-        "slots": []
+        "slots": [
+          "settings_tab"
+        ]
       },
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.vpn.zip",
-          "sha256": "4fbdf2e62fc234ef395cda0c68e784036b389003989625fe38138b393cb8095f",
+          "sha256": "9e99669eecbe2e5f7fdae6d00b60322773e6731d7ea15f115289cbda8c767278",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -608,6 +611,11 @@
           "default": "youtube_music"
         },
         {
+          "key": "cookies_file",
+          "type": "file",
+          "description": "Upload cookies.txt (per-plugin private copy; never shared)"
+        },
+        {
           "key": "cookies_path",
           "type": "string",
           "default": "/config/cookies.txt"
@@ -619,7 +627,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.ytdlp.zip",
-          "sha256": "a6d100bfeab03da8321dd042c8ae67de7516a08dfc2902770f9f3c161f45d0dc",
+          "sha256": "f7fe4fec93ba61b808034c4d57cee6bdc4ce6dca86071fcb05f7fff283d4ecc4",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }

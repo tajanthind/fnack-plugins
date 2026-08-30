@@ -54,6 +54,22 @@ def package_plugin(plugin_dir: Path) -> dict:
     if isinstance(types, str):
         types = [types]
 
+    # Brief 4 §4: cast stringified schema defaults to native JSON types so the
+    # form renderer's initial-state logic sees real booleans/numbers (e.g. a
+    # checkbox that should default checked, or a numeric delay field). Source
+    # manifests may keep strings for convenience; the packaged index carries
+    # the correct types.
+    settings_schema = []
+    for field in manifest.get("settings_schema", []):
+        field = dict(field)
+        if "default" in field and isinstance(field["default"], str):
+            raw = field["default"]
+            if raw.lower() in ("true", "false"):
+                field["default"] = raw.lower() == "true"
+            elif field.get("type") == "number" and raw.replace(".", "", 1).replace("-", "", 1).isdigit():
+                field["default"] = float(raw) if "." in raw else int(raw)
+        settings_schema.append(field)
+
     return {
         "id": plugin_id,
         "name": manifest.get("name", plugin_id),
@@ -64,7 +80,7 @@ def package_plugin(plugin_dir: Path) -> dict:
         "homepage": manifest.get("homepage", ""),
         "permissions": manifest.get("permissions", []),
         "trust_level": manifest.get("trust_level", "official"),
-        "settings_schema": manifest.get("settings_schema", []),
+        "settings_schema": settings_schema,
         "ui": manifest.get("ui", {}),
         "versions": {
             version: {
