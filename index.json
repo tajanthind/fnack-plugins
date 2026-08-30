@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-08-30T16:22:35.660731+00:00",
+  "updated_at": "2026-08-30T17:00:47.156450+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -230,8 +230,7 @@
       "name": "Navidrome",
       "latest_version": "1.0.0",
       "type": [
-        "scan_trigger",
-        "ui_extension"
+        "scan_trigger"
       ],
       "description": "Triggers Navidrome rescans and contributes the Navidrome settings panel.",
       "author": "fnack",
@@ -269,14 +268,12 @@
         }
       ],
       "ui": {
-        "slots": [
-          "settings_tab"
-        ]
+        "slots": []
       },
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.navidrome.zip",
-          "sha256": "87aa74d0202b08278186a152438ec3f2ef97a49b6f43c6e2723464e6b4c14d63",
+          "sha256": "4b4306bb6d4d33274accc9e67be0b0bd6653d1f9c53a3f249e2fe4b65a7d2cb7",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -538,7 +535,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.subsonic.zip",
-          "sha256": "c6cd97bafe134e760da8a309771fcda8ecd2a78bb86aa6eb85fbb178da1bec48",
+          "sha256": "488e893bb73b8167a952f2edd075038bcff8acd281542e60ed859b0a70b8da80",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -549,8 +546,7 @@
       "name": "VPN (WireGuard/OpenVPN)",
       "latest_version": "1.0.0",
       "type": [
-        "vpn",
-        "ui_extension"
+        "vpn"
       ],
       "description": "Split-mode WireGuard/OpenVPN tunnel for download/metadata traffic. Includes the local HTTP CONNECT proxy (scripts/http_proxy.py).",
       "author": "fnack",
@@ -560,16 +556,20 @@
         "filesystem:downloads"
       ],
       "trust_level": "official",
-      "settings_schema": [],
+      "settings_schema": [
+        {
+          "key": "config_file",
+          "type": "file",
+          "description": "Upload an OpenVPN (.ovpn) or WireGuard (.conf) config. Stored as this plugin's private copy."
+        }
+      ],
       "ui": {
-        "slots": [
-          "settings_tab"
-        ]
+        "slots": []
       },
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.vpn.zip",
-          "sha256": "42d3abd9fb24834711dda891e2081f2dbfaf324b98d90cae6f74cd30758ea424",
+          "sha256": "a3f4b0bab5d540fe3e93cec2cd0619b68045a40b4d0f96a540cdb953cca89f10",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
