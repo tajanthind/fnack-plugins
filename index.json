@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-08-31T23:02:47.507138+00:00",
+  "updated_at": "2026-08-31T23:26:10.092351+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -86,8 +86,7 @@
       "capabilities": [
         "artist.search",
         "artist.discography",
-        "track.metadata",
-        "album.metadata"
+        "track.metadata"
       ],
       "settings_schema": [],
       "ui": {
@@ -96,7 +95,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.deezer-batch.zip",
-          "sha256": "d894d3e2d4d984a895e075270cfd0ce3158b6a2ee64de823c86ae3a601f7200e",
+          "sha256": "cc15610a4b9ed2d6bf50b1aec87bc81ef5f2b74e1717829d72d22ce1b197c8d5",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -206,7 +205,7 @@
       "capabilities": [
         "artist.search",
         "artist.discography",
-        "album.metadata"
+        "track.metadata"
       ],
       "settings_schema": [],
       "ui": {
@@ -215,7 +214,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.itunes.zip",
-          "sha256": "4c3ce7d435347f82ffc984feb6792be62f401760597baf96c2af6b7bb28d76e6",
+          "sha256": "06e8fab64cf2ad5213e8ef065430b8fc5cc71c1164eeebee1ddd0020c4399132",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -274,9 +273,7 @@
       "trust_level": "official",
       "capabilities": [
         "artist.search",
-        "artist.discography",
-        "track.metadata",
-        "album.metadata"
+        "artist.discography"
       ],
       "settings_schema": [],
       "ui": {
@@ -285,7 +282,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.musicbrainz.zip",
-          "sha256": "47082a061a4a418b3b6cb5a6d0ba52e26a62039d69fcef9b9490a8b95e518bad",
+          "sha256": "db26c3c08d4b8f86a4464086c0df21a8338dc4aa9bcc10f0e117ce28063a527b",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -308,7 +305,6 @@
       "trust_level": "official",
       "capabilities": [
         "media.scan",
-        "media.health",
         "media.connection_test"
       ],
       "settings_schema": [
@@ -344,7 +340,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.navidrome.zip",
-          "sha256": "e1a1d1bbdf7f9ade0e64bc35380981fea1d335ab300de1c06bac454b4bf1efc2",
+          "sha256": "39b094eba5f9f82c723b65ec53c8dc9b9d1e62221fc06259727d2a2847610386",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
