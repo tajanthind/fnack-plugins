@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-08-30T17:00:47.156450+00:00",
+  "updated_at": "2026-08-31T03:17:38.492886+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -193,6 +193,40 @@
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.itunes.zip",
           "sha256": "68dbce27272b8488f1d614dc2082c32e04f56ae9dc83067e68d37cab8c145cb9",
+          "min_core_version": "0.2.0",
+          "api_version": "^1.0"
+        }
+      }
+    },
+    {
+      "id": "fnack.lidarr",
+      "name": "Lidarr Integration",
+      "latest_version": "1.0.0",
+      "type": [
+        "library_source",
+        "server_extension"
+      ],
+      "description": "Lets Lidarr use fnack as its indexer + download client (Newznab/Torznab + SABnzbd emulation). Grabs expand into fnack's library and download like any other track.",
+      "author": "fnack",
+      "homepage": "",
+      "permissions": [
+        "settings"
+      ],
+      "trust_level": "official",
+      "settings_schema": [
+        {
+          "key": "api_key",
+          "type": "secret",
+          "default": ""
+        }
+      ],
+      "ui": {
+        "slots": []
+      },
+      "versions": {
+        "1.0.0": {
+          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.lidarr.zip",
+          "sha256": "131f6cb5cf57532176711281fbd10eebd06b0aab1eb4240df1f935c51046e472",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
