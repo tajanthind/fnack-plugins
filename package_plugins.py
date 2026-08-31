@@ -54,6 +54,11 @@ def package_plugin(plugin_dir: Path) -> dict:
     if isinstance(types, str):
         types = [types]
 
+    capabilities = manifest.get("capabilities", [])
+    if isinstance(capabilities, str):
+        capabilities = [capabilities]
+    capabilities = [str(c) for c in capabilities]
+
     # Brief 4 §4: cast stringified schema defaults to native JSON types so the
     # form renderer's initial-state logic sees real booleans/numbers (e.g. a
     # checkbox that should default checked, or a numeric delay field). Source
@@ -80,6 +85,7 @@ def package_plugin(plugin_dir: Path) -> dict:
         "homepage": manifest.get("homepage", ""),
         "permissions": manifest.get("permissions", []),
         "trust_level": manifest.get("trust_level", "official"),
+        "capabilities": capabilities,
         "settings_schema": settings_schema,
         "ui": manifest.get("ui", {}),
         "versions": {
