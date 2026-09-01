@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-09-01T01:46:42.694758+00:00",
+  "updated_at": "2026-09-01T02:58:37.223911+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -86,7 +86,8 @@
       "capabilities": [
         "artist.search",
         "artist.discography",
-        "track.metadata"
+        "track.metadata",
+        "album.metadata"
       ],
       "settings_schema": [],
       "ui": {
@@ -95,7 +96,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.deezer-batch.zip",
-          "sha256": "cc15610a4b9ed2d6bf50b1aec87bc81ef5f2b74e1717829d72d22ce1b197c8d5",
+          "sha256": "5cee001dbf693839fd665ecc0a256d18cedab953ad5991366861b9c398719d7c",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
@@ -592,7 +593,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.spotify.zip",
-          "sha256": "0d12ea5ed83f9009fa5c80a789dc8fc6c5b89bcdf28f3c8ed322b4445da63901",
+          "sha256": "83ababf9d5f3b3a12c26a35383e118a4dfc0b9b1ffea11371a14ffef124fc2db",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
