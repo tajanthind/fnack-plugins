@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-08-31T23:26:10.092351+00:00",
+  "updated_at": "2026-09-01T00:33:33.801414+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -536,6 +536,11 @@
           "key": "delay",
           "type": "number",
           "default": 3.0
+        },
+        {
+          "key": "timeout",
+          "type": "number",
+          "default": 180
         }
       ],
       "ui": {
@@ -544,7 +549,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.spotiflac.zip",
-          "sha256": "2812a5e2a09007c0127cef7aa29e0f108599ae79ce3e90f6244483a06662e4a2",
+          "sha256": "9bf4bdb540d33a1341c38568da63b883092a69913c9ff2132a32cd3795b818ba",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
