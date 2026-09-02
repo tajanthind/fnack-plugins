@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-09-02T00:32:00.545814+00:00",
+  "updated_at": "2026-09-02T01:41:56.871033+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -738,7 +738,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.ytdlp.zip",
-          "sha256": "a79d0ff9aba20fa75977da27acbfae54b54068644aad4f2eb6144a51c9dc6f1c",
+          "sha256": "fb3f1e5b70a0fb4362c087a0de03a0d0b54bd7abd049d9fc14ea487657ce8942",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
