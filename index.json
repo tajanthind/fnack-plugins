@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-09-02T00:04:56.989184+00:00",
+  "updated_at": "2026-09-02T00:13:48.163121+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -76,7 +76,7 @@
       "type": [
         "metadata_provider"
       ],
-      "description": "Deezer discography/metadata enrichment for sync & import. Authoritative, tried first. The interactive /api/search-artist route stays core.",
+      "description": "Deezer metadata provider (AUTHORITATIVE): artist search/info, rate-limited discography with filters, track/album metadata. Implementation lives in this plugin (deezer.py). Served through MetadataService.",
       "author": "fnack",
       "homepage": "",
       "permissions": [
@@ -86,8 +86,12 @@
       "capabilities": [
         "artist.search",
         "artist.discography",
+        "artist.info",
         "track.metadata",
-        "album.metadata"
+        "album.metadata",
+        "album.search",
+        "track.search",
+        "album.tracks"
       ],
       "settings_schema": [],
       "ui": {
@@ -96,7 +100,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.deezer-batch.zip",
-          "sha256": "5cee001dbf693839fd665ecc0a256d18cedab953ad5991366861b9c398719d7c",
+          "sha256": "0fc3c61696d814da677bfbc6e02b41ef83863542629c2fb928ad14cc6cdcc438",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
