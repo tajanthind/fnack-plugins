@@ -13,7 +13,7 @@ This repository hosts official first-party plugins for [fnack](https://github.co
 | `fnack.spotify` | Spotify (URL resolution) | `metadata_provider` | Authoritative zero-auth Spotify track URL resolution (ISRC-first) via the `track.resolve` capability. Implementation lives in this plugin. Priority 30. |
 | `fnack.itunes` | iTunes Search API | `metadata_provider` | Authoritative iTunes fallback (artist.search / artist.discography / album.tracks). Implementation lives in this plugin. Priority 40. |
 | `fnack.acoustid` | AcoustID Fingerprinting | `fingerprint` | Authoritative fingerprinting (fingerprint.identify): verification, unknown/regional identification, mismatch flags. API key plugin-owned. Implementation lives in this plugin. |
-| `fnack.navidrome` | Navidrome Integration | `scan_trigger` | Triggers Navidrome media server scans and split-album repair. |
+| `fnack.navidrome` | Navidrome Integration | `scan_trigger` | Authoritative Navidrome integration (media.scan / media.health / media.connection_test): ping test, debounced scan, split-album repair. Config plugin-owned. Implementation lives in this plugin. |
 | `fnack.vpn` | VPN (WireGuard / OpenVPN) | `vpn` | Split-mode WireGuard/OpenVPN tunnel for download & metadata traffic. |
 | `fnack.clean-navidrome-artists` | Clean Navidrome Artists | `library_task` | Cleanup phantom artists and empty artist rows in Navidrome. |
 | `fnack.normalize-album-tags` | Normalize Album Tags | `library_task` | Aligns library tags with fnack database and merges split albums. |
