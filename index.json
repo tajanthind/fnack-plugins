@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-09-02T00:21:19.712733+00:00",
+  "updated_at": "2026-09-02T00:26:50.405951+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -9,7 +9,7 @@
       "type": [
         "fingerprint"
       ],
-      "description": "Optional acoustic verification: confirms a download is the right song, identifies unknown/regional tracks, flags mismatches. Keyless = disabled (silent no-op).",
+      "description": "Authoritative AcoustID fingerprinting (fingerprint.identify): verifies a download, identifies unknown/regional tracks, flags mismatches. API key is plugin-owned; keyless = disabled (silent no-op). Implementation lives in this plugin (acoustid.py).",
       "author": "fnack",
       "homepage": "",
       "permissions": [
@@ -33,7 +33,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.acoustid.zip",
-          "sha256": "55b705998a05cb5e34274548ea32ef7193651ed4b0f5f123b27ccfca7bb99a9c",
+          "sha256": "306afb3d6fea472bb0ed9d51da42c026cfbc47a7791306f8edca69b6c998bdde",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }

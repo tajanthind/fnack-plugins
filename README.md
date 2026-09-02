@@ -12,7 +12,7 @@ This repository hosts official first-party plugins for [fnack](https://github.co
 | `fnack.musicbrainz` | MusicBrainz | `metadata_provider` | Authoritative catalogue enrichment (artist.search + enrich) with 1 req/s rate-limiting and plugin-owned cache. Implementation lives in this plugin. Priority 20. |
 | `fnack.spotify` | Spotify (URL resolution) | `metadata_provider` | Authoritative zero-auth Spotify track URL resolution (ISRC-first) via the `track.resolve` capability. Implementation lives in this plugin. Priority 30. |
 | `fnack.itunes` | iTunes Search API | `metadata_provider` | Authoritative iTunes fallback (artist.search / artist.discography / album.tracks). Implementation lives in this plugin. Priority 40. |
-| `fnack.acoustid` | AcoustID Fingerprinting | `fingerprint` | Audio fingerprint identification and mismatch verification via chromaprint fpcalc. |
+| `fnack.acoustid` | AcoustID Fingerprinting | `fingerprint` | Authoritative fingerprinting (fingerprint.identify): verification, unknown/regional identification, mismatch flags. API key plugin-owned. Implementation lives in this plugin. |
 | `fnack.navidrome` | Navidrome Integration | `scan_trigger` | Triggers Navidrome media server scans and split-album repair. |
 | `fnack.vpn` | VPN (WireGuard / OpenVPN) | `vpn` | Split-mode WireGuard/OpenVPN tunnel for download & metadata traffic. |
 | `fnack.clean-navidrome-artists` | Clean Navidrome Artists | `library_task` | Cleanup phantom artists and empty artist rows in Navidrome. |
