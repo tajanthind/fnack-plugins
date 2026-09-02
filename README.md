@@ -10,7 +10,7 @@ This repository hosts official first-party plugins for [fnack](https://github.co
 | `fnack.ytdlp` | yt-dlp | `downloader` | YouTube / YouTube Music fallback downloader. Priority 50. |
 | `fnack.deezer-batch` | Deezer (batch enrichment) | `metadata_provider` | Fast discography & album metadata lookup for queue/import pipeline. Priority 10. |
 | `fnack.musicbrainz` | MusicBrainz | `metadata_provider` | Catalogue enrichment with 1 req/s rate-limiting. Priority 20. |
-| `fnack.spotify` | Spotify (URL resolution) | `metadata_provider` | Zero-auth Spotify track URL resolution (ISRC-first). Priority 30. |
+| `fnack.spotify` | Spotify (URL resolution) | `metadata_provider` | Authoritative zero-auth Spotify track URL resolution (ISRC-first) via the `track.resolve` capability. Implementation lives in this plugin. Priority 30. |
 | `fnack.itunes` | iTunes Search API | `metadata_provider` | Fallback metadata provider. Priority 40. |
 | `fnack.acoustid` | AcoustID Fingerprinting | `fingerprint` | Audio fingerprint identification and mismatch verification via chromaprint fpcalc. |
 | `fnack.navidrome` | Navidrome Integration | `scan_trigger` | Triggers Navidrome media server scans and split-album repair. |
