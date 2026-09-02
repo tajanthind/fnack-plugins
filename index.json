@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-09-02T02:33:41.987094+00:00",
+  "updated_at": "2026-09-02T02:38:15.094806+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -100,7 +100,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.deezer-batch.zip",
-          "sha256": "35dd43677bbbc601a69da4eea8690ccd851ce404759f66c4f9b90626cf201a5a",
+          "sha256": "78e3d5fd8200d09ca037b80b4730c9fe4572b2dcac4bd896e98b90da1c44adca",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
