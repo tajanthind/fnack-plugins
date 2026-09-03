@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-09-02T02:38:15.094806+00:00",
+  "updated_at": "2026-09-03T02:50:34.865349+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -301,7 +301,7 @@
       "type": [
         "scan_trigger"
       ],
-      "description": "Authoritative Navidrome media-server integration (media.scan / media.health / media.connection_test): ping test, debounced scan trigger, split-album repair. Config is plugin-owned. Implementation lives in this plugin (navidrome.py).",
+      "description": "Authoritative Navidrome media-server integration (media.scan / media.health / media.connection_test): ping test, debounced scan trigger. Config is plugin-owned. Implementation lives in this plugin (navidrome.py).",
       "author": "fnack",
       "homepage": "",
       "permissions": [
@@ -347,7 +347,7 @@
       "versions": {
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.navidrome.zip",
-          "sha256": "98977606f83cdaf5c0eac0a73604e0c958098b2cac3e546c412566f46f56f276",
+          "sha256": "25d27186a10a07ca22037961613fc2fa9fbe5c111438c3539c26f3fbe8eab0ab",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
