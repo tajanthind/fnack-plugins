@@ -13,7 +13,10 @@
   "description": "Lets Lidarr use fnack as its indexer + download client (Newznab/Torznab + SABnzbd emulation). Grabs expand into fnack's library and download like any other track.",
   "homepage": "",
   "permissions": [
-    "settings"
+    "network",
+    "settings",
+    "library:read",
+    "library:write"
   ],
   "settings_schema": [
     {
@@ -27,5 +30,7 @@
   },
   "dependencies": {},
   "trust_level": "official",
-  "capabilities": ["server.extension"]
+  "capabilities": [
+    "server.extension"
+  ]
 }
