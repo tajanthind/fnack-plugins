@@ -19,7 +19,6 @@ This repository hosts official first-party plugins for [fnack](https://github.co
 | `fnack.normalize-album-tags` | Normalize Album Tags | `library_task` | Aligns library tags with fnack database and merges split albums. |
 | `fnack.fix-navidrome-splits` | Fix Navidrome Splits | `library_task` | Directly merges split album rows inside Navidrome's SQLite database. |
 | `fnack.reverify-library` | Reverify Library | `library_task` | Re-verifies downloaded files against official metadata durations. |
-| `fnack.subsonic` | Subsonic API | `server_extension` | Exposes fnack library as a Subsonic server for Symfonium, DSub, and Sublime Music. |
 | `fnack.lidarr` | Lidarr Integration | `library_source`, `server_extension` | Lets Lidarr use fnack as its indexer + download client (Newznab/Torznab + SABnzbd emulation); grabs expand into fnack's library and download like any other track. |
 | `fnack.discord-webhook` | Discord Webhook | `event_hook` | Real-time Discord notifications for download completions, failures, and AcoustID flags. |
 | `fnack.ntfy-webhook` | ntfy Webhook | `event_hook` | Push notifications via ntfy.sh or self-hosted ntfy instance. |
