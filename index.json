@@ -1,6 +1,6 @@
 {
   "name": "Official fnack Plugins",
-  "updated_at": "2026-09-04T02:50:12.850484+00:00",
+  "updated_at": "2026-09-05T04:14:48.412173+00:00",
   "plugins": [
     {
       "id": "fnack.acoustid",
@@ -612,44 +612,6 @@
         "1.0.0": {
           "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.spotify.zip",
           "sha256": "322b96109e46063664c7d777f52f14b281e90ee63f72104ea8a34a475c85b49a",
-          "min_core_version": "0.2.0",
-          "api_version": "^1.0"
-        }
-      }
-    },
-    {
-      "id": "fnack.subsonic",
-      "name": "Subsonic API",
-      "latest_version": "1.0.0",
-      "type": [
-        "server_extension"
-      ],
-      "description": "Exposes fnack's library as a Subsonic server (Symfonium/DSub/Sublime Music). Auth via the fnack API key; open if no key set.",
-      "author": "fnack",
-      "homepage": "",
-      "permissions": [
-        "settings",
-        "library:read",
-        "filesystem:music"
-      ],
-      "trust_level": "official",
-      "capabilities": [
-        "server.extension"
-      ],
-      "settings_schema": [
-        {
-          "key": "enabled",
-          "type": "boolean",
-          "default": false
-        }
-      ],
-      "ui": {
-        "slots": []
-      },
-      "versions": {
-        "1.0.0": {
-          "download_url": "https://github.com/tajanthind/fnack-plugins/releases/download/v1.0.0/fnack.subsonic.zip",
-          "sha256": "162354e8303961ba44b03b6ae5201a23792ce0d97fb9da36d3be20c220e3fa38",
           "min_core_version": "0.2.0",
           "api_version": "^1.0"
         }
